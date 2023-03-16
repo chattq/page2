@@ -61,7 +61,29 @@ ul {
   height: 100%;
   opacity: 0.4;
 }
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
 
+  transform: translateX(0);
+}
+.sticky .header-wapper {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+  height: 60px;
+}
+.sticky .search_header::before {
+  display: none;
+}
+.sticky .search_header {
+  right: 170px;
+  background: transparent;
+  height: 63px;
+}
+
+/*  */
 .mySwiper .swiper-slide-thumb-active {
   opacity: 1;
 }
@@ -372,6 +394,9 @@ blockquote {
 }
 /* responsive */
 @media only screen and (max-width: 1285.7px) {
+  .sticky {
+    display: none;
+  }
   .row {
     width: 90%;
   }

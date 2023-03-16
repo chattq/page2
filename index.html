@@ -254,7 +254,6 @@
           </div>
         </div>
       </div>
-
       <!-- header -->
       <div style="display: flex; justify-content: center">
         <div
@@ -1053,6 +1052,22 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+      integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() >= 150) {
+            $(".header").addClass("sticky");
+          } else {
+            $(".header").removeClass("sticky");
+          }
+        });
+      });
     </script>
   </body>
 </html>
