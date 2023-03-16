@@ -60,7 +60,6 @@ ul {
   width: 25%;
   height: 100%;
   opacity: 0.4;
-  margin-right: 0 !important;
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -219,6 +218,7 @@ ul {
 
 /* card */
 .card_container {
+  overflow: hidden;
   display: flex;
   align-items: center;
   margin-top: 60px;
@@ -367,6 +367,9 @@ blockquote {
 .header_top_responsive {
   display: none !important;
 }
+.collapse1 {
+  display: none;
+}
 /* responsive */
 @media only screen and (max-width: 1285.7px) {
   .row {
@@ -395,6 +398,23 @@ blockquote {
     padding-right: 20px;
     font-size: 25px;
     color: #ea6f39;
+  }
+  .control-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .collapse1 {
+    display: block;
+    background-color: #fff;
+    width: 35%;
+    position: absolute;
+    width: 40%;
+    top: 85px;
+    right: 0;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -488,6 +508,16 @@ blockquote {
   .header-wapper {
     padding-left: 0;
   }
+  .thumbsslider {
+    bottom: -80px !important;
+    height: 63px !important;
+    width: 782px !important;
+  }
+  .control-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
 }
 @media only screen and (max-width: 1200px) {
   .connect_header_top {
@@ -504,6 +534,12 @@ blockquote {
   .button_signUp {
     margin: 20px 12px 15px 12px;
   }
+  .thumbsslider {
+    bottom: -80px !important;
+  }
+  .img_litter {
+    width: 100px !important;
+  }
 }
 @media only screen and (max-width: 486.4px) {
   .button_body {
@@ -516,6 +552,15 @@ blockquote {
     margin: 20px 12px 15px 12px;
   }
   .thumbsslider {
-    width: 100vw !important;
+    display: none !important;
+  }
+  .img_con {
+    height: 133px !important;
+  }
+  .img_con2 {
+    height: 56px !important;
+  }
+  .swiper {
+    height: 270px !important;
   }
 }
